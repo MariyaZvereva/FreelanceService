@@ -8,6 +8,7 @@ public class FreelanceService {
             if (money >= expenses) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = money - expenses;
+                money /= 3;
             } else {
                 money = money + income;
             }
